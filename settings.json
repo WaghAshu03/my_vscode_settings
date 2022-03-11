@@ -11,4 +11,5 @@
     "screencastMode.fontSize": 23
     "screencastMode.verticalOffset": 5
     "screencastMode.onlyKeyboardShortcuts": true
+    "terminal.integrated.fontSize": 18.5
 }
