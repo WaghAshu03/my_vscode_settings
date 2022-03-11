@@ -1,0 +1,110 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"restartfn": {
+		"prefix": "restartfn",
+		"body": [
+			"restart$1 = True",
+			"",
+			"while restart$1:",
+			"    ${0:#code}",
+			"",
+			"    print('-----------------------')",
+			"    restartfn$1 = input('Want to Continue(y/n): ')",
+			"    restartfn$1 = restartfn$1.lower()",
+			"",
+			"    while (restartfn$1 != 'y') and (restartfn$1 != 'n'):",
+			"        print('-----------------------')",
+			"        print('Invalid Input')",
+			"        print('Try Again')",
+			"        print('-----------------------')",
+			"        restartfn$1 = input('Want to Continue(y/n): ')",
+			"        restartfn$1 = restartfn$1.lower()",
+			"",
+			"    if restartfn$1 == 'n':",
+			"        restart$1 = False"
+
+		],
+		"description": "Log output to console"
+	},
+
+	"defintfloat_input": {
+		"prefix": "defintfloat_input",
+		"body": [
+			"def input_int_float(intput_string):",
+            "\tint_check_value = True",
+            "\t",
+            "\twhile(int_check_value):",
+            "\t    try:",
+            "\t        temp = float(input(intput_string))",
+            "\t        int_check_value = False",
+            "\t    except ValueError:",
+            "\t        print(\"-\"*40$1)",
+            "\t        print(\"Invalid Input\")",
+            "\t        print(\"Try Again\")",
+            "\t        print(\"-\"*40$1)",
+            "\t        int_check_value = True",
+            "\t",
+            "\treturn temp",
+
+		],
+		"description": "Log output to console"
+	},
+
+	"defparticularString_input": {
+		"prefix": "defparticularString_input",
+		"body": [
+			"def input_particular_string(input_string, favoured_string_list):",
+            "\ttemp = input(input_string)",
+            "\t",
+            "\twhile(temp not in favoured_string_list):",
+            "\t    print(\"-\"*40$1)",
+            "\t    print(\"Invalid Input\")",
+            "\t    print(\"Try Again\")",
+            "\t    print(\"-\"*40$1)",
+            "\t    temp = input(input_string)",
+            "\t",
+            "\treturn temp",
+	
+		],
+		"description": "Log output to console"
+	},
+
+	"defparticular_intfloat_input": {
+		"prefix": "defparticular_intfloat_input",
+		"body": [
+			"def input_int_float(intput_string):",
+            "\tint_check_value = True",
+            "\t",
+            "\twhile(int_check_value):",
+            "\t    try:",
+            "\t        temp = float(input(intput_string))",
+            "\t        int_check_value = False",
+            "\t    except ValueError:",
+            "\t        print(\"-\"*40$1)",
+            "\t        print(\"Invalid Input\")",
+            "\t        print(\"Try Again\")",
+            "\t        print(\"-\"*40$1)",
+            "\t        int_check_value = True",
+            "\t",
+            "\treturn temp",
+			"",
+			"def input_particular_int_float(input_string, favoured_int_list):",
+            "\ttemp = input_int_float(input_string)",
+			"\t",
+            "\twhile(temp not in favoured_int_list):",
+            "\t    print(\"-\"*40$1)",
+            "\t    print(\"Invalid Input\")",
+            "\t    print(\"Try Again\")",
+            "\t    print(\"-\"*40$1)",
+            "\t    temp = input_int_float(input_string)",
+            "\t",
+            "\treturn temp",
+	
+		],
+		"description": "Log output to console"
+	},
+}

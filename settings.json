@@ -1,0 +1,14 @@
+{
+    "editor.fontFamily": "'cascadia code', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 18.5,
+    "editor.fontLigatures": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "workbench.colorTheme": "Night Owl Black",
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "material-icon-theme"
+    "editor.mouseWheelZoom": true
+    "screencastMode.fontSize": 23
+    "screencastMode.verticalOffset": 5
+    "screencastMode.onlyKeyboardShortcuts": true
+}
