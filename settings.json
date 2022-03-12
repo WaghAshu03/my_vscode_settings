@@ -4,7 +4,7 @@
     "editor.fontLigatures": true,
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
-    "workbench.colorTheme": "Night Owl Black",
+    "workbench.colorTheme": "Night Owl Black (No Italics)",
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme"
     "editor.mouseWheelZoom": true
